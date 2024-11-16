@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.wowint",                              
+  "displayName": "Wow Integer Workshop",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Unity Package with the minimum needed to start learning code from World of Warcraft in C# with Unity3D. May the code be with you",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_11_16_WowIntegerWorkshopUnity3D.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
