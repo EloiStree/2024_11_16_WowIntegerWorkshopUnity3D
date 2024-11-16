@@ -1,8 +1,8 @@
 {
-    "name": "PicoGamepad",
+    "name": "LeonardoGamepad",
     "maps": [
         {
-            "name": "WowPicoDefault",
+            "name": "WowLeonardoDefault",
             "id": "2361d0f6-68bb-4a01-a4bc-d05be6c2e08b",
             "actions": [
                 {

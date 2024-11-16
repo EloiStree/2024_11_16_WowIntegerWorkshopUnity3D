@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &2776241
+--- !u!1 &45392224
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,605 +130,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2776242}
-  - component: {fileID: 2776243}
+  - component: {fileID: 45392226}
+  - component: {fileID: 45392225}
   m_Layer: 0
-  m_Name: Jump
+  m_Name: Documentation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2776242
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776241}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2776243
+--- !u!114 &45392225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776241}
+  m_GameObject: {fileID: 45392224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc30a5b8c50d0c4299133b4ed553254, type: 3}
+  m_Script: {fileID: 11500000, guid: 6befba87a50e1e6459c02580ade235df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_inputAction: {fileID: -241153808969588245, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onDown:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619187}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, Assembly-CSharp
-        m_MethodName: TriggerJump
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onUp:
-    m_PersistentCalls:
-      m_Calls: []
-  m_isPressed: 0
---- !u!1 &206881634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 206881635}
-  - component: {fileID: 206881636}
-  m_Layer: 0
-  m_Name: Tab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &206881635
+  m_urlDocumentation: https://github.com/EloiStree/2024_08_29_ScratchToWarcraft
+  m_urlPizzaLicense: https://github.com/EloiStree/License
+  m_context: "\r\n    This project is a bridge between learning code and the warcraft
+    world.\r\n    Call 'Scratch To Warcraft' because designed for https://scratch.mit.edu
+    at start.\r\n    Look at WowIntegerWorkshop on GitHub if you look for other language.\r\n   
+    https://github.com/EloiStree\r\n    May the code be with you.\r\n    "
+--- !u!4 &45392226
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206881634}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &206881636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206881634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc30a5b8c50d0c4299133b4ed553254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_inputAction: {fileID: -8630625687627341119, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onDown:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619187}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, Assembly-CSharp
-        m_MethodName: TriggerTab
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onUp:
-    m_PersistentCalls:
-      m_Calls: []
-  m_isPressed: 0
---- !u!1 &327792394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 327792395}
-  - component: {fileID: 327792396}
-  m_Layer: 0
-  m_Name: Move Back Forward
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &327792395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327792394}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &327792396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327792394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13287ee9d22fbe945b56c9a1752a906c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_inputAction: {fileID: 5564028810236155912, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619186}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_AxisToBasicMove, Assembly-CSharp
-        m_MethodName: MoveBackwardForwardPercent
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_events:
-    m_onMinEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMinExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneExit:
-      m_PersistentCalls:
-        m_Calls: []
-  m_borderRange: 0.8
-  m_deathZone: 0.1
-  m_axisValue: 0
-  m_isMin: 0
-  m_isMax: 0
-  m_isInDeathZone: 0
---- !u!1 &363411699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 363411700}
-  m_Layer: 0
-  m_Name: Input
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &363411700
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363411699}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1202994017}
-  - {fileID: 327792395}
-  - {fileID: 971783303}
-  - {fileID: 2776242}
-  - {fileID: 1624676333}
-  - {fileID: 206881635}
-  m_Father: {fileID: 1269714349}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &436451733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 436451734}
-  - component: {fileID: 436451735}
-  m_Layer: 0
-  m_Name: Sample Walk And jump
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &436451734
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436451733}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 994497480}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &436451735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436451733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fb7c49d66a977d46bb7ddf265466e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_player: {fileID: 994497479}
-  m_jumpStart: 1032
-  m_jumpEnd: 2032
-  m_moveForwardStart: 1038
-  m_moveForwardStop: 2038
-  m_moveBackStart: 1040
-  m_moveBackStop: 2040
-  m_walkForwardTiming: 1
-  m_walkBackwardTiming: 2
---- !u!1 &475016494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475016495}
-  - component: {fileID: 475016496}
-  m_Layer: 0
-  m_Name: Random Jump
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &475016495
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475016494}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1269714349}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &475016496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475016494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3c7caf70d6af445aac60f8ef8f6209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onTick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269714348}
-        m_TargetAssemblyTypeName: Eloi.WowIntegerMono, Assembly-CSharp
-        m_MethodName: SendIntegerToTarget
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1032
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1269714348}
-        m_TargetAssemblyTypeName: Eloi.WowIntegerMono, Assembly-CSharp
-        m_MethodName: SendIntegerToTarget
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2032
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_secondsBetweenTicksMinimum: 0.1
-  m_secondsBetweenTicksMaximum: 4
---- !u!1 &759619184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 759619185}
-  - component: {fileID: 759619187}
-  - component: {fileID: 759619186}
-  m_Layer: 0
-  m_Name: Integer Move Basic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &759619185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759619184}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1269714349}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &759619186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759619184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfbeedff040630c429ef2b28171b1c01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_player: {fileID: 759619187}
-  m_deathZone: 0.3
-  m_moveLeftRightPercent: 0.5
-  m_moveBackwardForwardPercent: 0.5
-  m_rotateLeftRightPercent: 0.5
-  m_isMovingLeft: 0
-  m_isMovingRight: 0
-  m_isMovingForward: 0
-  m_isMovingBackward: 0
-  m_isRotatingLeft: 0
-  m_isRotatingRight: 0
---- !u!114 &759619187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759619184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038731082be9804458c549eeff01c11f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_player: {fileID: 1269714348}
-  m_jumpStart: 1032
-  m_jumpEnd: 2032
-  m_moveForwardStart: 1090
-  m_moveForwardStop: 2090
-  m_moveBackStart: 1083
-  m_moveBackStop: 2083
-  m_moveLeftStart: 1087
-  m_moveLeftStop: 2087
-  m_moveRightStart: 1088
-  m_moveRightStop: 2088
-  m_rotateLeftStart: 1081
-  m_rotateLeftStop: 2081
-  m_rotateRightStart: 1068
-  m_rotateRightStop: 2068
-  m_tabStart: 1009
-  m_tabStop: 2009
-  m_power1Start: 1048
-  m_power1Stop: 2048
---- !u!1 &971783302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 971783303}
-  - component: {fileID: 971783304}
-  m_Layer: 0
-  m_Name: Rotate left Right
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &971783303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971783302}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &971783304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971783302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13287ee9d22fbe945b56c9a1752a906c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_inputAction: {fileID: 2324350472932789277, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619186}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_AxisToBasicMove, Assembly-CSharp
-        m_MethodName: RotateLeftRightPercent
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_events:
-    m_onMinEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMinExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneExit:
-      m_PersistentCalls:
-        m_Calls: []
-  m_borderRange: 0.8
-  m_deathZone: 0.1
-  m_axisValue: 0
-  m_isMin: 0
-  m_isMax: 0
-  m_isInDeathZone: 0
---- !u!1 &994497478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 994497480}
-  - component: {fileID: 994497479}
-  m_Layer: 0
-  m_Name: Wow Integer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &994497479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994497478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a83552d43216047af729a7d0005830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ipAddress: 127.0.0.1
-  m_ipPort: 7073
-  m_playerDefaultIndex: 2
-  m_lastPushedIndex: 0
-  m_lastPushedValue: 0
-  m_lastPushedDate: 
---- !u!4 &994497480
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994497478}
+  m_GameObject: {fileID: 45392224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 966.4945, y: 182.5464, z: 26.627913}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 436451734}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146229656
@@ -849,213 +290,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1202994016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1202994017}
-  - component: {fileID: 1202994018}
-  m_Layer: 0
-  m_Name: Move Left Right
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1202994017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202994016}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1202994018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202994016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13287ee9d22fbe945b56c9a1752a906c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_inputAction: {fileID: -4005450711288784079, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619186}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_AxisToBasicMove, Assembly-CSharp
-        m_MethodName: MoveLeftRightPercent
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_events:
-    m_onMinEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMinExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onMaxExit:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onDeathZoneExit:
-      m_PersistentCalls:
-        m_Calls: []
-  m_borderRange: 0.8
-  m_deathZone: 0.1
-  m_axisValue: 0
-  m_isMin: 0
-  m_isMax: 0
-  m_isInDeathZone: 0
---- !u!1 &1269714347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1269714349}
-  - component: {fileID: 1269714348}
-  m_Layer: 0
-  m_Name: Wow From PicoW
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1269714348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269714347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a83552d43216047af729a7d0005830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ipAddress: 127.0.0.1
-  m_ipPort: 7073
-  m_playerDefaultIndex: 3
-  m_lastPushedIndex: 0
-  m_lastPushedValue: 0
-  m_lastPushedDate: 
---- !u!4 &1269714349
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269714347}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 966.4945, y: 182.5464, z: 26.627913}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 475016495}
-  - {fileID: 363411700}
-  - {fileID: 759619185}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1624676332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1624676333}
-  - component: {fileID: 1624676334}
-  m_Layer: 0
-  m_Name: Power 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1624676333
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624676332}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 363411700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1624676334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624676332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc30a5b8c50d0c4299133b4ed553254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_inputAction: {fileID: 643612449894858716, guid: c685164f5c230e44a99b4969f2fad7b0,
-    type: 3}
-  m_onChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onDown:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 759619187}
-        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, Assembly-CSharp
-        m_MethodName: TriggerPower1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onUp:
-    m_PersistentCalls:
-      m_Calls: []
-  m_isPressed: 0
 --- !u!1 &1918645823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,11 +382,148 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2204721120302967722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 966.4945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 182.5464
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.627913
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821295288913139371, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931358844239343975, guid: 7dd79963b86b0d142b9d1379ca840443,
+        type: 3}
+      propertyPath: m_Name
+      value: Wow From  Arduino Leonardo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dd79963b86b0d142b9d1379ca840443, type: 3}
+--- !u!1001 &4497888176554159060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5797867655395376790, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_Name
+      value: Wow Integer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 966.4945
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 182.5464
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.627913
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292087829195332167, guid: 53751e060b4d7be4d97c8a77370086af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53751e060b4d7be4d97c8a77370086af, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1918645826}
   - {fileID: 1146229659}
-  - {fileID: 994497480}
-  - {fileID: 1269714349}
+  - {fileID: 4497888176554159060}
+  - {fileID: 2204721120302967722}
+  - {fileID: 45392226}
