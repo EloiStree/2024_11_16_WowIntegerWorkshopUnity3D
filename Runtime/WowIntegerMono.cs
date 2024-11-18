@@ -54,6 +54,16 @@ namespace Eloi.Wow
     {
         m_ipPort = ipPort;
     }
+
+        public void SentIntegerToTarget(IntWowEnum intWowEnum)
+        {
+            SendIntegerToTarget((int)intWowEnum);
+        }
+
+        public void SentIntegerToAll(IntWowEnum intWowEnum)
+        {
+            SendIntegerToAll((int)intWowEnum);
+        }
         public void SendIntegerToTarget(int commandValue)
         {
 
