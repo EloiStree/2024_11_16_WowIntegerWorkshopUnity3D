@@ -8,6 +8,7 @@ namespace Eloi.Wow
 
         public void OnEnable()
         {
+            m_axisReference.action.Enable();
             m_axisReference.action.performed += OnPerformed;
             m_axisReference.action.canceled += OnCanceled;
         }

@@ -8,6 +8,8 @@ namespace Eloi.Wow
 
         public void OnEnable()
         {
+
+            m_buttonReference.action.Enable();
             m_buttonReference.action.performed += OnPerformed;
             m_buttonReference.action.canceled += OnCanceled;
         }
