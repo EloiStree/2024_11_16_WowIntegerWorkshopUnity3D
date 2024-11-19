@@ -55,6 +55,8 @@ namespace Eloi.Wow
         m_ipPort = ipPort;
     }
 
+
+
         public void SentIntegerToTarget(IntWowEnum intWowEnum)
         {
             SendIntegerToTarget((int)intWowEnum);
