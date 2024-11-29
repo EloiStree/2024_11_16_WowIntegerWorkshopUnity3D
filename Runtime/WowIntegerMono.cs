@@ -56,13 +56,12 @@ namespace Eloi.Wow
     }
 
 
-
-        public void SentIntegerToTarget(IntWowEnum intWowEnum)
+        public void SendIntegerToTarget(IntWowEnum intWowEnum)
         {
             SendIntegerToTarget((int)intWowEnum);
         }
 
-        public void SentIntegerToAll(IntWowEnum intWowEnum)
+        public void SendIntegerToAll(IntWowEnum intWowEnum)
         {
             SendIntegerToAll((int)intWowEnum);
         }

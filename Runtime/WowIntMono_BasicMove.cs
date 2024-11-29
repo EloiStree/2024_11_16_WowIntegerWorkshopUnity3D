@@ -6,58 +6,107 @@ using UnityEngine;
 namespace Eloi.Wow
 {
     public class WowIntMono_BasicMove : MonoBehaviour
-{
+    {
 
 
-    public WowIntegerMono m_player;
+        public WowIntegerMono m_player;
+        public IntWowEnum m_moveForwardStart = IntWowEnum.Numpad8_P;
+        public IntWowEnum m_moveForwardStop = IntWowEnum.Numpad8_R;
 
-    public int m_jumpStart = 1032;
-    public int m_jumpEnd = 2032;
+        public IntWowEnum m_moveBackStart = IntWowEnum.Numpad5_P;
+        public IntWowEnum m_moveBackStop = IntWowEnum.Numpad5_R;
 
-    public int m_moveForwardStart = 1090;
-    public int m_moveForwardStop = 2090;
+        public IntWowEnum m_moveLeftStart = IntWowEnum.Numpad1_P;
+        public IntWowEnum m_moveLeftStop = IntWowEnum.Numpad1_R;
 
-    public int m_moveBackStart = 1083;
-    public int m_moveBackStop = 2083;
+        public IntWowEnum m_moveRightStart = IntWowEnum.Numpad3_P;
+        public IntWowEnum m_moveRightStop = IntWowEnum.Numpad3_R;
 
-    public int m_moveLeftStart = 1087;
-    public int m_moveLeftStop = 2087;
-    
-    public int m_moveRightStart = 1088;
-    public int m_moveRightStop = 2088;
-    
-    public int m_rotateLeftStart = 1081;
-    public int m_rotateLeftStop = 2081;
+        public IntWowEnum m_rotateLeftStart = IntWowEnum.Numpad4_P;
+        public IntWowEnum m_rotateLeftStop = IntWowEnum.Numpad4_R;
 
-    public int m_rotateRightStart = 1068;
-    public int m_rotateRightStop = 2068;
+        public IntWowEnum m_rotateRightStart = IntWowEnum.Numpad6_P;
+        public IntWowEnum m_rotateRightStop = IntWowEnum.Numpad6_R;
 
-        public int m_moveUpStart = 1032;
-        public int m_moveUpStop = 2032;
-        public int m_moveDownStart = 1067;
-        public int m_moveDownStop = 2067;
-        public int m_tabStart = 1009;
-        public int m_tabStop = 2009;
-        public int m_interactionStart= 1070;
-        public int m_interactionStop= 2070;
-        public int m_power1Start = 1048;
-        public int m_power1Stop = 2048;
-        public int m_power2Start = 1049;
-        public int m_power2Stop = 2049;
-        public int m_power3Start = 1050;
-        public int m_power3Stop = 2050;
-        public int m_power4Start = 1051;
-        public int m_power4Stop = 2051;
-        public int m_power5Start = 1052;
-        public int m_power5Stop = 2052;
-        public int m_power6Start = 1053;
-        public int m_power6Stop = 2053;
-        public int m_power7Start = 1054;
-        public int m_power7Stop = 2054;
-        public int m_power8Start = 1055;
-        public int m_power8Stop = 2055;
-        public int m_power9Start = 1056;
-        public int m_power9Stop = 2056;
+        public IntWowEnum m_moveUpStart = IntWowEnum.Numpad2_P;
+        public IntWowEnum m_moveUpStop = IntWowEnum.Numpad2_R;
+
+        public IntWowEnum m_moveDownStart = IntWowEnum.Numpad0_P;
+        public IntWowEnum m_moveDownStop = IntWowEnum.Numpad0_R;
+
+        public IntWowEnum m_tabStart = IntWowEnum.Tab_P;
+        public IntWowEnum m_tabStop = IntWowEnum.Tab_R;
+
+        public IntWowEnum m_interactionStart = IntWowEnum.Numpad7_P; // 
+        public IntWowEnum m_interactionStop = IntWowEnum.Numpad7_R; // Numpad 7
+
+        public IntWowEnum m_autoRunStart = IntWowEnum.Numpad8_P; // 
+        public IntWowEnum m_autoRunStop = IntWowEnum.Numpad8_R; // 
+
+
+        public IntWowEnum m_targetNearestEnemyStart = IntWowEnum.Multiply_P; // 
+        public IntWowEnum m_targetNearestEnemyStop = IntWowEnum.Multiply_R; // 
+
+        public IntWowEnum m_targetPreviousEnemyStart = IntWowEnum.Divide_P; // 
+        public IntWowEnum m_targetPreviousEnemyStop = IntWowEnum.Divide_R; // 
+
+        public IntWowEnum m_scanEnemyHoldStart = IntWowEnum.Subtract_P; // 
+        public IntWowEnum m_scanEnemyHoldStop = IntWowEnum.Subtract_R; // 
+
+        public IntWowEnum m_lastTargetStart = IntWowEnum.Add_P; // 
+        public IntWowEnum m_lastTargetStop = IntWowEnum.Add_R; // 
+
+        public IntWowEnum m_targetSelfStart = IntWowEnum.Decimal_P; // 
+        public IntWowEnum m_targetSelfStop = IntWowEnum.Decimal_R; // 
+
+        public IntWowEnum m_followTargetStart = 0;
+        public IntWowEnum m_followTargetStop = 0;
+
+        //Tab Numpad * Target Nearest enemy 
+        //Tab Numpad / Previous Enemy
+        //Tab Numpad - Scane Enemy Hold
+        //Tab Numpad + Interact
+        //Tab Numpad . Last target    
+
+
+        public void TargetNearestEnemyStart() => m_player.SendIntegerToTarget((int)m_targetNearestEnemyStart);
+        public void TargetNearestEnemyStop() => m_player.SendIntegerToTarget((int)m_targetNearestEnemyStop);
+        public void TargetPreviousEnemyStart() => m_player.SendIntegerToTarget((int)m_targetPreviousEnemyStart);
+        public void TargetPreviousEnemyStop() => m_player.SendIntegerToTarget((int)m_targetPreviousEnemyStop);
+        public void ScanEnemyHoldStart() => m_player.SendIntegerToTarget((int)m_scanEnemyHoldStart);
+        public void ScanEnemyHoldStop() => m_player.SendIntegerToTarget((int)m_scanEnemyHoldStop);
+        public void LastTargetStart() => m_player.SendIntegerToTarget((int)m_lastTargetStart);
+        public void LastTargetStop() => m_player.SendIntegerToTarget((int)m_lastTargetStop);
+        public void InteractionStart() => m_player.SendIntegerToTarget((int)m_interactionStart);
+        public void InteractionStop() => m_player.SendIntegerToTarget((int)m_interactionStop);
+        public void AutoRunStart() => m_player.SendIntegerToTarget((int)m_autoRunStart);
+        public void AutoRunStop() => m_player.SendIntegerToTarget((int)m_autoRunStop);
+        public void FollowTargetStart() => m_player.SendIntegerToTarget((int)m_followTargetStart);
+        public void FollowTargetStop() => m_player.SendIntegerToTarget((int)m_followTargetStop);
+
+
+
+
+        public IntWowEnum m_power1Start = IntWowEnum.Key1_P;
+        public IntWowEnum m_power1Stop = IntWowEnum.Key1_R;
+        public IntWowEnum m_power2Start = IntWowEnum.Key2_P;
+        public IntWowEnum m_power2Stop = IntWowEnum.Key2_R;
+        public IntWowEnum m_power3Start = IntWowEnum.Key3_P;
+        public IntWowEnum m_power3Stop = IntWowEnum.Key3_R;
+        public IntWowEnum m_power4Start = IntWowEnum.Key4_P;
+        public IntWowEnum m_power4Stop = IntWowEnum.Key4_R;
+        public IntWowEnum m_power5Start = IntWowEnum.Key5_P;
+        public IntWowEnum m_power5Stop = IntWowEnum.Key5_R;
+        public IntWowEnum m_power6Start = IntWowEnum.Key6_P;
+        public IntWowEnum m_power6Stop = IntWowEnum.Key6_R;
+        public IntWowEnum m_power7Start = IntWowEnum.Key7_P;
+        public IntWowEnum m_power7Stop = IntWowEnum.Key7_R;
+        public IntWowEnum m_power8Start = IntWowEnum.Key8_P;
+        public IntWowEnum m_power8Stop = IntWowEnum.Key8_R;
+        public IntWowEnum m_power9Start = IntWowEnum.Key9_P;
+        public IntWowEnum m_power9Stop = IntWowEnum.Key9_R;
+        public IntWowEnum m_power0Start = IntWowEnum.Key0_P;
+        public IntWowEnum m_power0Stop = IntWowEnum.Key0_R;
 
 
 
@@ -73,8 +122,8 @@ namespace Eloi.Wow
         public void StopRotatingLeft() => m_player.SendIntegerToTarget(m_rotateLeftStop);
         public void StartRotatingRight() => m_player.SendIntegerToTarget(m_rotateRightStart);
         public void StopRotatingRight() => m_player.SendIntegerToTarget(m_rotateRightStop);
-        public void StartJump() => m_player.SendIntegerToTarget(m_jumpStart);
-        public void StopJump() => m_player.SendIntegerToTarget(m_jumpEnd);
+        public void StartJump() => m_player.SendIntegerToTarget(m_moveUpStart);
+        public void StopJump() => m_player.SendIntegerToTarget(m_moveUpStop);
         public void StartTab() => m_player.SendIntegerToTarget(m_tabStart);
         public void StopTab() => m_player.SendIntegerToTarget(m_tabStop);
         public void StartPower1() => m_player.SendIntegerToTarget(m_power1Start);
@@ -95,6 +144,8 @@ namespace Eloi.Wow
         public void StopPower8() => m_player.SendIntegerToTarget(m_power8Stop);
         public void StartPower9() => m_player.SendIntegerToTarget(m_power9Start);
         public void StopPower9() => m_player.SendIntegerToTarget(m_power9Stop);
+        public void StartPower0() => m_player.SendIntegerToTarget(m_power0Start);
+        public void StopPower0() => m_player.SendIntegerToTarget(m_power0Stop);
 
 
 
@@ -102,7 +153,7 @@ namespace Eloi.Wow
         public void TriggerTab() { StartTab(); StopTab(); }
         public void TriggerJump() { StartJump(); StopJump(); }
 
-        public void StartMovingDown()=> m_player.SendIntegerToTarget(m_moveDownStart);
+        public void StartMovingDown() => m_player.SendIntegerToTarget(m_moveDownStart);
         public void StopMovingDown() => m_player.SendIntegerToTarget(m_moveDownStop);
         public void StartMovingUp() => m_player.SendIntegerToTarget(m_moveUpStart);
         public void StopMovingUp() => m_player.SendIntegerToTarget(m_moveUpStop);
