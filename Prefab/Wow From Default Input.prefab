@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ipAddress: 192.168.1.69
-  m_ipPort: 7074
+  m_ipPort: 7073
   m_playerDefaultIndex: 1
   m_lastPushedIndex: 0
   m_lastPushedValue: 0
@@ -745,47 +745,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8309f46aca9960c4d8ff73d6d125924a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_player: {fileID: 4652481012578719941}
-  m_jumpStart: 1032
-  m_jumpEnd: 2032
-  m_moveForwardStart: 1090
-  m_moveForwardStop: 2090
-  m_moveBackStart: 1083
-  m_moveBackStop: 2083
-  m_moveLeftStart: 1087
-  m_moveLeftStop: 2087
-  m_moveRightStart: 1088
-  m_moveRightStop: 2088
-  m_rotateLeftStart: 1081
-  m_rotateLeftStop: 2081
-  m_rotateRightStart: 1068
-  m_rotateRightStop: 2068
-  m_moveUpStart: 1032
-  m_moveUpStop: 2032
-  m_moveDownStart: 1067
-  m_moveDownStop: 2067
+  m_player: {fileID: 0}
+  m_moveForwardStart: 1104
+  m_moveForwardStop: 2104
+  m_moveBackStart: 1101
+  m_moveBackStop: 2101
+  m_moveLeftStart: 1097
+  m_moveLeftStop: 2097
+  m_moveRightStart: 1099
+  m_moveRightStop: 2099
+  m_rotateLeftStart: 1100
+  m_rotateLeftStop: 2100
+  m_rotateRightStart: 1102
+  m_rotateRightStop: 2102
+  m_moveUpStart: 1098
+  m_moveUpStop: 2098
+  m_moveDownStart: 1096
+  m_moveDownStop: 2096
   m_tabStart: 1009
   m_tabStop: 2009
-  m_interactionStart: 1070
-  m_interactionStop: 2070
-  m_power1Start: 1048
-  m_power1Stop: 2048
-  m_power2Start: 1049
-  m_power2Stop: 2049
-  m_power3Start: 1050
-  m_power3Stop: 2050
-  m_power4Start: 1051
-  m_power4Stop: 2051
-  m_power5Start: 1052
-  m_power5Stop: 2052
-  m_power6Start: 1053
-  m_power6Stop: 2053
-  m_power7Start: 1054
-  m_power7Stop: 2054
-  m_power8Start: 1055
-  m_power8Stop: 2055
-  m_power9Start: 1056
-  m_power9Stop: 2056
+  m_interactionStart: 1103
+  m_interactionStop: 2103
+  m_autoRunStart: 1104
+  m_autoRunStop: 2104
+  m_targetNearestEnemyStart: 1106
+  m_targetNearestEnemyStop: 2106
+  m_targetPreviousEnemyStart: 1111
+  m_targetPreviousEnemyStop: 2111
+  m_scanEnemyHoldStart: 1109
+  m_scanEnemyHoldStop: 2109
+  m_lastTargetStart: 1107
+  m_lastTargetStop: 2107
+  m_targetSelfStart: 1110
+  m_targetSelfStop: 2110
+  m_followTargetStart: 0
+  m_followTargetStop: 0
+  m_power1Start: 1049
+  m_power1Stop: 2049
+  m_power2Start: 1050
+  m_power2Stop: 2050
+  m_power3Start: 1051
+  m_power3Stop: 2051
+  m_power4Start: 1052
+  m_power4Stop: 2052
+  m_power5Start: 1053
+  m_power5Stop: 2053
+  m_power6Start: 1054
+  m_power6Stop: 2054
+  m_power7Start: 1055
+  m_power7Stop: 2055
+  m_power8Start: 1056
+  m_power8Stop: 2056
+  m_power9Start: 1057
+  m_power9Stop: 2057
+  m_power0Start: 1048
+  m_power0Stop: 2048
 --- !u!114 &7890660275206826817
 MonoBehaviour:
   m_ObjectHideFlags: 0
