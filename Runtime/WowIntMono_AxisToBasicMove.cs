@@ -7,9 +7,10 @@ namespace Eloi.Wow
     public WowIntMono_BasicMove m_player;
     public float m_deathZone = 0.3f;
 
-        public float m_moveLeftRightPercent = 0.5f;
+    public float m_moveLeftRightPercent = 0.5f;
     public float m_moveBackwardForwardPercent = 0.5f;
     public float m_rotateLeftRightPercent = 0.5f;
+    public float m_moveDownUpPercent = 0.5f;
 
     public bool m_isMovingLeft;
     public bool m_isMovingRight;
@@ -17,6 +18,9 @@ namespace Eloi.Wow
     public bool m_isMovingBackward;
     public bool m_isRotatingLeft;
     public bool m_isRotatingRight;
+        public bool m_isMovingDown;
+        public bool m_isMovingUp;
+
 
     public void Update()
     {
@@ -27,6 +31,8 @@ namespace Eloi.Wow
         bool isMovingBackward = m_moveBackwardForwardPercent < -m_deathZone;
         bool isRotatingLeft = m_rotateLeftRightPercent < -m_deathZone;
         bool isRotatingRight = m_rotateLeftRightPercent > m_deathZone;
+            bool isMovingDown = m_moveDownUpPercent < -m_deathZone;
+            bool isMovingUp = m_moveDownUpPercent > m_deathZone;
 
         if (isMovingLeft != m_isMovingLeft)
         {
@@ -106,8 +112,30 @@ namespace Eloi.Wow
             }
         }
 
-
-        
+        if (isMovingDown != m_isMovingDown)
+        {
+            m_isMovingDown = isMovingDown;
+            if (m_isMovingDown)
+            {
+                m_player.StartMovingDown();
+            }
+            else
+            {
+                m_player.StopMovingDown();
+            }
+        }
+        if (isMovingUp != m_isMovingUp)
+        {
+            m_isMovingUp = isMovingUp;
+            if (m_isMovingUp)
+            {
+                m_player.StartMovingUp();
+            }
+            else
+            {
+                m_player.StopMovingUp();
+            }
+        }
     }
 
     public void MoveBackwardForwardPercent(float percent11) { 
@@ -123,6 +151,12 @@ namespace Eloi.Wow
     {
 
         m_rotateLeftRightPercent = percent11;
+    }
+
+    public void MoveDownUpPercent(float percent11)
+    {
+
+        m_moveDownUpPercent = percent11;
     }
 }
 

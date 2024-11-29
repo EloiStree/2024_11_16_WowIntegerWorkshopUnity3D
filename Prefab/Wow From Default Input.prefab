@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1781788684411114883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7161250385955849374}
+  - component: {fileID: 8326606295975788848}
+  m_Layer: 0
+  m_Name: Move Down Up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7161250385955849374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781788684411114883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3738893536249191068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8326606295975788848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781788684411114883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf62a5576994dac43b242d450b166229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction: {fileID: 6516445557300897897, guid: c685164f5c230e44a99b4969f2fad7b0,
+    type: 3}
+  m_onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7890660275206826817}
+        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_AxisToBasicMove, be.elab.wowint
+        m_MethodName: MoveDownUpPercent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_axisValue: 0
 --- !u!1 &1880014963917879681
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,9 +94,13 @@ Transform:
   - {fileID: 6958937962901728038}
   - {fileID: 4898974691903578783}
   - {fileID: 6900394077080796559}
+  - {fileID: 7161250385955849374}
   - {fileID: 3646743791282701695}
   - {fileID: 3373234431659715922}
   - {fileID: 6031219686921207282}
+  - {fileID: 7862141529645046057}
+  - {fileID: 1202065481906531828}
+  - {fileID: 129490181775669015}
   - {fileID: 5652433784734674346}
   m_Father: {fileID: 2821295288913139371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,7 +116,7 @@ GameObject:
   - component: {fileID: 4652481012578719941}
   - component: {fileID: 7857192727870711969}
   m_Layer: 0
-  m_Name: Wow From  Arduino Leonardo
+  m_Name: Wow From Default Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345b86b0f5442424ab894e5763cae924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ipAddress: 127.0.0.1
-  m_ipPort: 7073
+  m_ipAddress: 192.168.1.69
+  m_ipPort: 7074
   m_playerDefaultIndex: 1
   m_lastPushedIndex: 0
   m_lastPushedValue: 0
@@ -163,6 +229,74 @@ MonoBehaviour:
       - m_Target: {fileID: 8067982123144121769}
         m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, be.elab.wowint
         m_MethodName: TriggerJump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  m_isPressed: 0
+--- !u!1 &3620986098012998491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202065481906531828}
+  - component: {fileID: 7899842530888160657}
+  m_Layer: 0
+  m_Name: Power 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202065481906531828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620986098012998491}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3738893536249191068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7899842530888160657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620986098012998491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf494915b50684d4286efaca049e1933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction: {fileID: -5564569801133171610, guid: 20e44d130a548584e94e2fd8da89f2e6,
+    type: 3}
+  m_onChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8067982123144121769}
+        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, be.elab.wowint
+        m_MethodName: StopPower3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -300,6 +434,142 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_axisValue: 0
+--- !u!1 &6441662195607787911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7862141529645046057}
+  - component: {fileID: 3048044116386097366}
+  m_Layer: 0
+  m_Name: Power 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7862141529645046057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441662195607787911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3738893536249191068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3048044116386097366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441662195607787911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf494915b50684d4286efaca049e1933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction: {fileID: -4623524249076764724, guid: 20e44d130a548584e94e2fd8da89f2e6,
+    type: 3}
+  m_onChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8067982123144121769}
+        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, be.elab.wowint
+        m_MethodName: StopPower2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  m_isPressed: 0
+--- !u!1 &6851977509706676390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129490181775669015}
+  - component: {fileID: 4159838464169567634}
+  m_Layer: 0
+  m_Name: Power 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129490181775669015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851977509706676390}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3738893536249191068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4159838464169567634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851977509706676390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf494915b50684d4286efaca049e1933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputAction: {fileID: 6718288239262948671, guid: 20e44d130a548584e94e2fd8da89f2e6,
+    type: 3}
+  m_onChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8067982123144121769}
+        m_TargetAssemblyTypeName: Eloi.Wow.WowIntMono_BasicMove, be.elab.wowint
+        m_MethodName: StopPower4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  m_isPressed: 0
 --- !u!1 &8083687252083883382
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,10 +760,32 @@ MonoBehaviour:
   m_rotateLeftStop: 2081
   m_rotateRightStart: 1068
   m_rotateRightStop: 2068
+  m_moveUpStart: 1032
+  m_moveUpStop: 2032
+  m_moveDownStart: 1067
+  m_moveDownStop: 2067
   m_tabStart: 1009
   m_tabStop: 2009
+  m_interactionStart: 1070
+  m_interactionStop: 2070
   m_power1Start: 1048
   m_power1Stop: 2048
+  m_power2Start: 1049
+  m_power2Stop: 2049
+  m_power3Start: 1050
+  m_power3Stop: 2050
+  m_power4Start: 1051
+  m_power4Stop: 2051
+  m_power5Start: 1052
+  m_power5Stop: 2052
+  m_power6Start: 1053
+  m_power6Stop: 2053
+  m_power7Start: 1054
+  m_power7Stop: 2054
+  m_power8Start: 1055
+  m_power8Stop: 2055
+  m_power9Start: 1056
+  m_power9Stop: 2056
 --- !u!114 &7890660275206826817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,12 +803,15 @@ MonoBehaviour:
   m_moveLeftRightPercent: 0.5
   m_moveBackwardForwardPercent: 0.5
   m_rotateLeftRightPercent: 0.5
+  m_moveDownUpPercent: 0.5
   m_isMovingLeft: 0
   m_isMovingRight: 0
   m_isMovingForward: 0
   m_isMovingBackward: 0
   m_isRotatingLeft: 0
   m_isRotatingRight: 0
+  m_isMovingDown: 0
+  m_isMovingUp: 0
 --- !u!1 &9105545336301272937
 GameObject:
   m_ObjectHideFlags: 0

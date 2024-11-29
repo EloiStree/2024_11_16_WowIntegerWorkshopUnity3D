@@ -32,13 +32,32 @@ namespace Eloi.Wow
     public int m_rotateRightStart = 1068;
     public int m_rotateRightStop = 2068;
 
-
-    public int m_tabStart = 1009;
-    public int m_tabStop = 2009;
-
-
-    public int m_power1Start = 1048;
-    public int m_power1Stop = 2048;
+        public int m_moveUpStart = 1032;
+        public int m_moveUpStop = 2032;
+        public int m_moveDownStart = 1067;
+        public int m_moveDownStop = 2067;
+        public int m_tabStart = 1009;
+        public int m_tabStop = 2009;
+        public int m_interactionStart= 1070;
+        public int m_interactionStop= 2070;
+        public int m_power1Start = 1048;
+        public int m_power1Stop = 2048;
+        public int m_power2Start = 1049;
+        public int m_power2Stop = 2049;
+        public int m_power3Start = 1050;
+        public int m_power3Stop = 2050;
+        public int m_power4Start = 1051;
+        public int m_power4Stop = 2051;
+        public int m_power5Start = 1052;
+        public int m_power5Stop = 2052;
+        public int m_power6Start = 1053;
+        public int m_power6Stop = 2053;
+        public int m_power7Start = 1054;
+        public int m_power7Stop = 2054;
+        public int m_power8Start = 1055;
+        public int m_power8Stop = 2055;
+        public int m_power9Start = 1056;
+        public int m_power9Stop = 2056;
 
 
 
@@ -60,11 +79,35 @@ namespace Eloi.Wow
         public void StopTab() => m_player.SendIntegerToTarget(m_tabStop);
         public void StartPower1() => m_player.SendIntegerToTarget(m_power1Start);
         public void StopPower1() => m_player.SendIntegerToTarget(m_power1Stop);
+        public void StartPower2() => m_player.SendIntegerToTarget(m_power2Start);
+        public void StopPower2() => m_player.SendIntegerToTarget(m_power2Stop);
+        public void StartPower3() => m_player.SendIntegerToTarget(m_power3Start);
+        public void StopPower3() => m_player.SendIntegerToTarget(m_power3Stop);
+        public void StartPower4() => m_player.SendIntegerToTarget(m_power4Start);
+        public void StopPower4() => m_player.SendIntegerToTarget(m_power4Stop);
+        public void StartPower5() => m_player.SendIntegerToTarget(m_power5Start);
+        public void StopPower5() => m_player.SendIntegerToTarget(m_power5Stop);
+        public void StartPower6() => m_player.SendIntegerToTarget(m_power6Start);
+        public void StopPower6() => m_player.SendIntegerToTarget(m_power6Stop);
+        public void StartPower7() => m_player.SendIntegerToTarget(m_power7Start);
+        public void StopPower7() => m_player.SendIntegerToTarget(m_power7Stop);
+        public void StartPower8() => m_player.SendIntegerToTarget(m_power8Start);
+        public void StopPower8() => m_player.SendIntegerToTarget(m_power8Stop);
+        public void StartPower9() => m_player.SendIntegerToTarget(m_power9Start);
+        public void StopPower9() => m_player.SendIntegerToTarget(m_power9Stop);
+
 
 
         public void TriggerPower1() { StartPower1(); StopPower1(); }
         public void TriggerTab() { StartTab(); StopTab(); }
         public void TriggerJump() { StartJump(); StopJump(); }
+
+        public void StartMovingDown()=> m_player.SendIntegerToTarget(m_moveDownStart);
+        public void StopMovingDown() => m_player.SendIntegerToTarget(m_moveDownStop);
+        public void StartMovingUp() => m_player.SendIntegerToTarget(m_moveUpStart);
+        public void StopMovingUp() => m_player.SendIntegerToTarget(m_moveUpStop);
+
+
     }
 
 

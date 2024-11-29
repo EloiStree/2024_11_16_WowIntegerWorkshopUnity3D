@@ -60,12 +60,12 @@ namespace Eloi.Wow
         {
             if (m_isRightState)
             {
-                m_lastSentInteger = m_enterLeftZone;
+                m_lastSentInteger = m_enterRightZone;
                 m_player.SendIntegerToTarget(m_enterRightZone);
             }
             else
             {
-                m_lastSentInteger = m_enterLeftZone;
+                m_lastSentInteger = m_exitRightZone;
                 m_player.SendIntegerToTarget(m_exitRightZone);
             }
         }
