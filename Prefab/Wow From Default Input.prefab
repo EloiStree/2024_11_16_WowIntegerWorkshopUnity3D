@@ -778,6 +778,8 @@ MonoBehaviour:
   m_lastTargetStop: 2107
   m_targetSelfStart: 1110
   m_targetSelfStop: 2110
+  m_callMountStart: 1110
+  m_callMountStop: 2110
   m_followTargetStart: 0
   m_followTargetStop: 0
   m_power1Start: 1049
@@ -814,10 +816,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_player: {fileID: 8067982123144121769}
   m_deathZone: 0.3
-  m_moveLeftRightPercent: 0.5
-  m_moveBackwardForwardPercent: 0.5
-  m_rotateLeftRightPercent: 0.5
-  m_moveDownUpPercent: 0.5
+  m_moveLeftRightPercent: 0
+  m_moveBackwardForwardPercent: 0
+  m_rotateLeftRightPercent: 0
+  m_moveDownUpPercent: 0
   m_isMovingLeft: 0
   m_isMovingRight: 0
   m_isMovingForward: 0

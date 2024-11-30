@@ -56,8 +56,11 @@ namespace Eloi.Wow
         public IntWowEnum m_lastTargetStart = IntWowEnum.Add_P; // 
         public IntWowEnum m_lastTargetStop = IntWowEnum.Add_R; // 
 
-        public IntWowEnum m_targetSelfStart = IntWowEnum.Decimal_P; // 
-        public IntWowEnum m_targetSelfStop = IntWowEnum.Decimal_R; // 
+        public IntWowEnum m_targetSelfStart = IntWowEnum.F1_P; // 
+        public IntWowEnum m_targetSelfStop = IntWowEnum.F1_R; //
+                                                              //
+        public IntWowEnum m_callMountStart = IntWowEnum.Decimal_P; //
+        public IntWowEnum m_callMountStop = IntWowEnum.Decimal_R; //
 
         public IntWowEnum m_followTargetStart = 0;
         public IntWowEnum m_followTargetStop = 0;
@@ -83,6 +86,12 @@ namespace Eloi.Wow
         public void AutoRunStop() => m_player.SendIntegerToTarget((int)m_autoRunStop);
         public void FollowTargetStart() => m_player.SendIntegerToTarget((int)m_followTargetStart);
         public void FollowTargetStop() => m_player.SendIntegerToTarget((int)m_followTargetStop);
+
+        public void TargetSelfStart() => m_player.SendIntegerToTarget((int)m_targetSelfStart);
+        public void TargetSelfStop() => m_player.SendIntegerToTarget((int)m_targetSelfStop);
+
+        public void CallMountStart() => m_player.SendIntegerToTarget((int)m_callMountStart);
+        public void CallMountStop() => m_player.SendIntegerToTarget((int)m_callMountStop);
 
 
 

@@ -41,6 +41,19 @@ namespace Eloi.Wow
         m_ipAddress = ipAddress;
         m_ipPort = ipPort;
     }
+    public void SetTargetFromStringIpPort(string lineOrText)
+    {
+            string[] lines = lineOrText.Split('\n');
+            if (lines.Length > 0)
+            {
+                string[] values = lines[0].Split(':');
+                if (values.Length > 1)
+                {
+                    SetTargetIp(values[0].Trim());
+                    SetTargetPort(values[1].Trim());
+                }
+            }
+    }
     public void SetTargetIp(string ipAddress)
     {
         m_ipAddress = ipAddress;

@@ -164,6 +164,7 @@
 
     public enum IntWowEnum: int 
 {
+    None = 0,
     Backspace_P = 1008,
     Backspace_R = 2008,
     Tab_P = 1009,
