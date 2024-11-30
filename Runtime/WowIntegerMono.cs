@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 namespace Eloi.Wow
@@ -23,6 +24,7 @@ namespace Eloi.Wow
     public int m_lastPushedValue = 0;
     public string m_lastPushedDate = "";
 
+        public UnityEvent<int,int> m_onSendIndexInteger;
     private UdpClient m_udpClient;
     private void Awake()
     {
@@ -113,6 +115,7 @@ namespace Eloi.Wow
         // Send the message
         IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(m_ipAddress), m_ipPort);
         m_udpClient.Send(message, message.Length, endPoint);
+            m_onSendIndexInteger.Invoke(index, commandValue);
 
     }
 
