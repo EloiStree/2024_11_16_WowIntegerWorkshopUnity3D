@@ -1,7 +1,7 @@
 
 {                                                                                
-  "name": "be.elab.wowint",                              
-  "displayName": "Wow Integer Workshop",                        
+  "name": "be.elab.wowintinput",                              
+  "displayName": "Wow Integer Workshop Input",                        
   "version": "0.0.1",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
