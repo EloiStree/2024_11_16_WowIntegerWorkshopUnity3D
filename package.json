@@ -2,7 +2,7 @@
 {                                                                                
   "name": "be.elab.wowintinput",                              
   "displayName": "Wow Integer Workshop Input",                        
-  "version": "0.0.1",                         
+  "version": "2025.1.16",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
   "description": "Unity Package with the minimum needed to start learning code from World of Warcraft in C# with Unity3D. May the code be with you",                         
